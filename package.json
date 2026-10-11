@@ -1,0 +1,40 @@
+{
+  "name": "slachain",
+  "version": "1.0.0",
+  "description": "SLAChain: An Automated Blockchain Framework for Real-Time Service Level Agreement Enforcement and Penalty Execution",
+  "type": "module",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "server": "node server/mockApi.js",
+    "oracle": "node oracle/monitor.js",
+    "client:install": "cd client && npm install",
+    "client": "cd client && npm run dev",
+    "start": "npm run client"
+  },
+  "keywords": [
+    "solidity",
+    "web3",
+    "sla",
+    "oracle",
+    "smart-contracts",
+    "microservices",
+    "automated-penalties"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2"
+  }
+}
